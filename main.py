@@ -6,11 +6,10 @@ def parse(url):
     api = requests.get(url)
     tree = lxml.html.document_fromstring(api.text)
     text_original = tree.xpath('//*[@id="TopPanel"]/div[5]/div/div/div/div/div[1]/div[2]/div[6]/div[4]/div/div/text()')
-    print(text_original)
     # /div/div/text() это поиск текста в div внутри div
     with open('songs/4.txt', 'w') as ouf:
         for i in text_original:
-            ouf.write((i) )
+            ouf.write((i) + '\n')
             print(i)
     # теперь вытаскиваем из ссылки название исполнителя и присваиваем файлу
     a = url
