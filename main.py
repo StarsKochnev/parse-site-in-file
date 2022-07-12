@@ -49,6 +49,6 @@ def main():
     print('введите ссылку с песней типа: https://www.beesona.ru/songs/ddt/chto_takoe_osen.php')
     parse(input()) #https://www.beesona.ru/songs/ddt/chto_takoe_osen.php
 main()
-print('!!!!Если текст пустой введите еще раз ссылку!!!')
+print('!!!!Если текст пустой введите еще раз ссылку !!!')
 parse2(input())
 
